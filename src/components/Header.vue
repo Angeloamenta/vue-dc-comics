@@ -1,5 +1,23 @@
 <template>
-  <h1>ciao</h1>
+  <div class="container">
+      <div class="col-sx text-center">
+          <img src="../assets/img/dc-logo.png" alt="">
+          </div>
+      <div class="col-dx">
+          <ul class="list-none">
+              <li><a href="">CHARACTERS</a></li>
+              <li><a class="active" href="">COMICS</a></li>
+              <li><a href="">MOVIES</a></li>
+              <li><a href="">TV</a></li>
+              <li><a href="">GAMES</a></li>
+              <li><a href="">COLLECTIBLES</a></li>
+              <li><a href="">VIDEOS</a></li>
+              <li><a href="">FANS</a></li>
+              <li><a href="">NEWS</a></li>
+              <li><a href="">SHOP</a></li>
+          </ul>
+      </div>
+  </div>
 </template>
 
 <script>
@@ -19,6 +37,51 @@ name: 'Header',
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.container {
+    display: flex;
+    
 
+    .col-sx {
+        width: 20%;
+        
+        padding: 10px 0;
+        img {
+            width: 4em;
+        }
+    }
+
+    .col-dx {
+        width: 80%;
+        
+
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                }a {
+                    display: block;
+                    height: 100%;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.6s;
+                    &:hover,
+                    &:active,
+                    &.active {
+                        color: blue;
+                        padding-top: 4px;
+                        border-bottom: 4px solid blue;
+                        }
+                    }
+                
+            }
+    }
+    
+}
 </style>
