@@ -10,27 +10,27 @@
         <ul class="list-none">
             <li>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                <p>Digital Comics</p>
+                <p>DIGITAL COMICS</p>
             </li>
 
             <li>
                 <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                <p>Digital Comics</p>
+                <p>DC MERCHANDISE</p>
             </li>
 
             <li>
                 <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                <p>Digital Comics</p>
+                <p>SUBSCRIPTION</p>
             </li>
 
             <li>
-                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                <p>Digital Comics</p>
+                <img class="shop" src="../assets/img/buy-comics-shop-locator.png" alt="">
+                <p>COMIC SHOP LOCATOR</p>
             </li>
 
             <li>
                 <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                <p>Digital Comics</p>
+                <p>DC POWER VISA</p>
             </li>
         </ul>
         </div>
@@ -61,6 +61,8 @@ main {
         background-color: $BlueColor;
         padding: 30px 0;
         height: 200px;
+        display: flex;
+        align-items: center;
         .container{
             ul {
                 display: flex;
@@ -73,6 +75,9 @@ main {
                         width: 60px;
                     }
 
+                    .shop {
+                        width: 40px;
+                    }
                     p {
                         color: white;
                         font-size: 1.1em;
