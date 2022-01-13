@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <div class="col-sx text-center">
+      <div class="col-sx ">
           <img src="../assets/img/dc-logo.png" alt="">
           </div>
       <div class="col-dx">
@@ -70,7 +70,6 @@ name: 'Header',
                     text-decoration: none;
                     display: flex;
                     align-items: center;
-                    transition: all 0.6s;
                     &:hover,
                     &:active,
                     &.active {
