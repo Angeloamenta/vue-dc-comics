@@ -109,6 +109,10 @@ name: 'Footer'
                         text-decoration: none;
                         color: gray;
                         font-size: 0.8em;
+                        &:hover{
+                            color: white;
+                            
+                        }
                     }
             }
             .shop {
@@ -132,6 +136,10 @@ name: 'Footer'
                 border: 2px solid $BlueColor;
                 padding: 1em;
                 background-color: transparent;
+                &:hover{
+                        background: white;
+                        color: $GrayColor;  
+                        }
                 
             }
         }
@@ -149,6 +157,10 @@ name: 'Footer'
                     margin-left: 10px;
                     a img {
                         width: 80%;
+                        &:hover{
+                            background: white;
+                            border-radius: 100%;
+                        }
                         
                     }
                 }
