@@ -31,6 +31,7 @@
             <Bluestring 
             v-for="(element, index) in bluethumb"
             :key="index"
+            :class="element.class"
             :srcimg="element.img"
             :titoloimg="element.text"
             />
@@ -151,25 +152,33 @@ data() {
   }
 ],
  bluethumb: [
+    //  per vedere l'immagine usare require
+    //  link informazione 
+    // https://www.it-swarm.it/it/javascript/immagine-statica-src-nel-modello-vue.js/825958067/
   {
-    "img": "../assets/img/buy-comics-digital-comics.png",
-    "text": "DIGITAL COMICS"
+    "img": require("../assets/img/buy-comics-digital-comics.png"),
+    "text": "DIGITAL COMICS",
+    "class": ""
   },
   {
-    "img": "../assets/img/buy-comics-merchandise.png",
-    "text": "DC MERCHANDISE"
+    "img": require("../assets/img/buy-comics-merchandise.png"),
+    "text": "DC MERCHANDISE",
+    "class": ""
   },
   {
-    "img":"../assets/img/buy-comics-subscriptions.png",
-    "text": "SUBSCRIPTION"
+    "img":require("../assets/img/buy-comics-subscriptions.png"),
+    "text": "SUBSCRIPTION",
+    "class": ""
   },
   {
-    "img":"../assets/img/buy-comics-shop-locator.png" ,
-    "text": "COMIC SHOP LOCATOR"
+    "img":require("../assets/img/buy-comics-shop-locator.png") ,
+    "text": "COMIC SHOP LOCATOR",
+    "class": "shop"
   },
   {
-    "img":"../assets/img/buy-dc-power-visa.svg" ,
-    "text": "DC POWER VISA"
+    "img":require("../assets/img/buy-dc-power-visa.svg") ,
+    "text": "DC POWER VISA",
+    "class": ""
   }
   
 ]
@@ -235,23 +244,26 @@ main {
             ul {
                 display: flex;
                 justify-content: space-around;
-                li {
-                    display: flex;
-                    align-items: center;
+                 li {
+                     display: flex;
+                     align-items: center;
                     
-                    img {
-                        width: 60px;
-                    }
+                     img {
+                         width: 60px;
+                     }
 
-                    .shop {
-                        width: 40px;
-                    }
-                    p {
-                        color: white;
-                        font-size: 1.1em;
-                        margin-left: 8px;
-                    }
-                }
+                     .shop {
+                         img {
+                             
+                             width: 40px;
+                         }
+                     }
+                     p {
+                         color: white;
+                         font-size: 1.1em;
+                         margin-left: 8px;
+                     }
+                 }
             }
         }
     }

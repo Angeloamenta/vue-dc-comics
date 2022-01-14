@@ -15,6 +15,25 @@ props: {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+li {
+                    display: flex;
+                    align-items: center;
+                    
+                    img {
+                        width: 60px;
+                    }
 
+                    .shop {
+                         img {
+                             
+                             width: 40px;
+                         }
+                     }
+                    p {
+                        color: white;
+                        font-size: 1.1em;
+                        margin-left: 8px;
+                    }
+                }
 </style>
