@@ -36,4 +36,37 @@ props: {
     margin-top: 10px;
     }
 }
+
+@media screen and (max-width: 920px) {
+
+main {
+    .main-top {
+        .container{
+            h2 {
+                color: white
+            }
+
+            .elements {
+                display: flex;
+                 flex-wrap: wrap;
+                 justify-content: center;
+                 .element {
+                     width: calc(80% / 3);
+                     margin-top: 40px;
+                     margin-left: 20px;
+                     .element-img {
+                         height: 200px;
+                         overflow: hidden;
+                     }
+                     p {
+                         color: white;
+                     }
+                 }
+            }
+        }
+    }
+   
+}
+
+}
 </style>

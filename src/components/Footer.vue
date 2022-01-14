@@ -169,4 +169,52 @@ name: 'Footer'
     }
 
 }
+
+@media screen and (max-width: 920px) {
+.footer-top {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    // padding: 30px 0;
+    width: 100%;
+    //  height: 350px;
+    color: white;
+    overflow: hidden;
+    .container {
+        display: flex;
+        
+       .img-dc {
+           width: 75%;
+           display: flex;
+           justify-content: end;
+           align-items: center;
+           position: relative;
+           z-index: -1;
+           img {
+               position: absolute;
+                        top: -115 ;
+           }
+       }
+        .col-top {
+            width: calc(80% / 3);
+            margin: 20px 20px;
+            ul li {
+                margin-top: 10px;
+                a {
+                        text-decoration: none;
+                        color: gray;
+                        font-size: 0.8em;
+                        &:hover{
+                            color: white;
+                            
+                        }
+                    }
+            }
+            .shop {
+                margin-top: 15px;
+            }
+            
+        }
+    }
+}
+}
 </style>

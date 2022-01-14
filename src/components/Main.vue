@@ -193,6 +193,8 @@ main {
     .jumbotron {
         width: 100%;
         height: 60vh;
+        background-repeat: no-repeat;
+        background-size: cover;
         position: relative;
         background-image: url("../assets/img/jumbotron.jpg");
         background-position: top;
@@ -266,5 +268,91 @@ main {
             }
         }
     }
+}
+
+@media screen and (max-width: 920px) {
+
+main {
+    .jumbotron {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        background-image: url("../assets/img/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        .container {
+            height: 100%;
+            position: relative;
+            .current {    
+                position: absolute;
+                bottom: -20px;
+                left: -40px;
+                background-color: $BlueColor;
+                padding: 10px;
+            }
+        }
+    }
+    .main-top {
+        background-color: $GrayColor;
+        padding: 30px 0;
+        // height: 200px;
+        .container{
+            h2 {
+                color: white
+            }
+
+            .elements {
+                display: flex;
+                 flex-wrap: wrap;
+                 justify-content: center;
+                // .element {
+                //     width: calc(100% / 6);
+                //     margin-top: 40px;
+                //     .element-img {
+                //         height: 200px;
+                //         overflow: hidden;
+                //     }
+                //     p {
+                //         color: white;
+                //     }
+                // }
+            }
+        }
+    }
+    .main-bottom {
+        background-color: $BlueColor;
+        padding: 30px 0;
+        // height: 200px;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        .container{
+            ul {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                 li {
+                     display: flex;
+                     align-items: center;
+                    
+                     img {
+                         width: 60px;
+                     }
+
+                     p {
+                         color: white;
+                         font-size: 1.1em;
+                         margin-left: 8px;
+                     }
+                    }
+                    .shop img { 
+                             width: 40px;
+                         }
+                     
+            }
+        }
+    }
+}
+
 }
 </style>

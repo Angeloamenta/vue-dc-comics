@@ -86,4 +86,18 @@ name: 'Header',
     }
     
 }
+@media screen and (max-width: 920px) {
+
+.container {
+    .col-sx {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  .col-dx {
+      display: none;
+  }
+}
+
+}
 </style>
