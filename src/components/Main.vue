@@ -34,12 +34,12 @@
             :srcimg="element.img"
             :titoloimg="element.text"
             />
-             <li>
+            <!-- <li>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                 <p>DIGITAL COMICS</p>
             </li>
 
-           <!-- <li>
+            <li>
                 <img src="../assets/img/buy-comics-merchandise.png" alt="">
                 <p>DC MERCHANDISE</p>
             </li>
