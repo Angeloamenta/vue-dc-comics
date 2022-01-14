@@ -19,14 +19,21 @@ props: {
 
 <style lang="scss" scoped>
 .element {
-    width: calc(100% / 6);
-                    margin-top: 40px;
-                    .element-img {
-                        height: 200px;
-                        overflow: hidden;
-                    }
-                    p {
-                        color: white;
-                    }
+    width: calc(80% / 6);
+    margin-top: 40px;
+    margin-left: 20px;
+    .element-img {
+      height: 200px;
+      overflow: hidden;
+        img {
+         width: 100%;
+        }
+    }
+    p {
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    }
 }
 </style>
