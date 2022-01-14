@@ -18,7 +18,15 @@ props: {
 </script>
 
 <style lang="scss" scoped>
-main {
-    
+.element {
+    width: calc(100% / 6);
+                    margin-top: 40px;
+                    .element-img {
+                        height: 200px;
+                        overflow: hidden;
+                    }
+                    p {
+                        color: white;
+                    }
 }
 </style>
