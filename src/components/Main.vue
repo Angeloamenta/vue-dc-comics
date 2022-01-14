@@ -28,12 +28,18 @@
     <div class="main-bottom">
         <div class="container">
         <ul class="list-none">
-            <li>
+            <Bluestring 
+            v-for="(element, index) in bluethumb"
+            :key="index"
+            :srcimg="element.img"
+            :titoloimg="element.text"
+            />
+             <li>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                 <p>DIGITAL COMICS</p>
             </li>
 
-            <li>
+           <!-- <li>
                 <img src="../assets/img/buy-comics-merchandise.png" alt="">
                 <p>DC MERCHANDISE</p>
             </li>
@@ -51,7 +57,7 @@
             <li>
                 <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                 <p>DC POWER VISA</p>
-            </li>
+            </li> -->
         </ul>
         </div>
     </div>
@@ -60,11 +66,13 @@
 
 <script>
 import Thumbs from "./Thumbs.vue";
+import Bluestring from "./Bluestring.vue";
 
 export default {
 name: 'Main',
 components: {
-    Thumbs
+    Thumbs,
+    Bluestring
 },
 data() {
     return {
@@ -141,6 +149,29 @@ data() {
     "series": "Catwoman",
     "type": "graphic novel"
   }
+],
+ bluethumb: [
+  {
+    "img": "../assets/img/buy-comics-digital-comics.png",
+    "text": "DIGITAL COMICS"
+  },
+  {
+    "img": "../assets/img/buy-comics-merchandise.png",
+    "text": "DC MERCHANDISE"
+  },
+  {
+    "img":"../assets/img/buy-comics-subscriptions.png",
+    "text": "SUBSCRIPTION"
+  },
+  {
+    "img":"../assets/img/buy-comics-shop-locator.png" ,
+    "text": "COMIC SHOP LOCATOR"
+  },
+  {
+    "img":"../assets/img/buy-dc-power-visa.svg" ,
+    "text": "DC POWER VISA"
+  }
+  
 ]
     }
 }
