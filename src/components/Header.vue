@@ -59,12 +59,13 @@ name: 'Header',
         ul {
             height: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             li {
                 height: 100%;
                 display: flex;
                 align-items: center;
+                margin-left: 15px;
                 }a {
                     color: black;
                     display: block;
