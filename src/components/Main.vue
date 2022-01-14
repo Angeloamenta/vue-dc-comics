@@ -10,12 +10,18 @@
     <div class="main-top">
   <div class="container">
       <div class="elements">
-          <div class="element" v-for="(element, index) in elements" :key="index">
+          <!-- <div class="element" v-for="(element, index) in elements" :key="index">
               <div class="element-img">
               <img :src="element.thumb" alt="">
               </div>
               <p>{{element.series}}</p>
-          </div>
+          </div> -->
+          <Thumbs
+          v-for="(element, index) in elements" 
+          :key="index"
+          :src="element.thumb"
+          :titolo="element.series"
+          />
       </div>
   </div>
     </div>
@@ -53,8 +59,13 @@
 </template>
 
 <script>
+import Thumbs from "./Thumbs.vue";
+
 export default {
 name: 'Main',
+components: {
+    Thumbs
+},
 data() {
     return {
     elements: [
