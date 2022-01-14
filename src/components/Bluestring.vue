@@ -17,23 +17,20 @@ props: {
 
 <style lang="scss" scoped>
 li {
-                    display: flex;
-                    align-items: center;
+    display: flex;
+    align-items: center;
                     
-                    img {
-                        width: 60px;
-                    }
+    img {
+     width: 60px;
+        }
 
-                    .shop {
-                         img {
-                             
-                             width: 40px;
-                         }
-                     }
-                    p {
-                        color: white;
-                        font-size: 1.1em;
-                        margin-left: 8px;
-                    }
-                }
+    p {
+    color: white;
+    font-size: 1.1em;
+    margin-left: 8px;
+    }
+}
+.shop img { 
+ width: 40px;
+}
 </style>

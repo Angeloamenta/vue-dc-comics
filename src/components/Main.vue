@@ -252,18 +252,16 @@ main {
                          width: 60px;
                      }
 
-                     .shop {
-                         img {
-                             
-                             width: 40px;
-                         }
-                     }
                      p {
                          color: white;
                          font-size: 1.1em;
                          margin-left: 8px;
                      }
-                 }
+                    }
+                    .shop img { 
+                             width: 40px;
+                         }
+                     
             }
         }
     }
