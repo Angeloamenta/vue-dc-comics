@@ -38,6 +38,7 @@ name: 'Header',
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
 .container {
     display: flex;
     
@@ -65,6 +66,7 @@ name: 'Header',
                 display: flex;
                 align-items: center;
                 }a {
+                    color: black;
                     display: block;
                     height: 100%;
                     text-decoration: none;
@@ -73,9 +75,9 @@ name: 'Header',
                     &:hover,
                     &:active,
                     &.active {
-                        color: blue;
+                        color: $BlueColor;
                         padding-top: 4px;
-                        border-bottom: 4px solid blue;
+                        border-bottom: 4px solid $BlueColor;
                         }
                     }
                 
